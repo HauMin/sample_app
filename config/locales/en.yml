@@ -30,4 +30,32 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  static_pages:
+    home:
+      title: "Home"
+      title1: "Sample App"
+      str1_html: "This is the home page for the %{href}"
+      str2: "sample application"
+    help:
+      title: "Help"
+      str1_html: "Get help on the Ruby on Rails Tutorial at the %{href}"
+      str2_html: "To get help on this sample app, see the %{href}"
+      str3: "Ruby on Rails Tutorial book"
+      str4: "Rails Tutorial help section"
+    about:
+      title: "About"
+      str1_html: "The %{main_href} is a %{book_href} and %{screnn_href} 
+      to teach web development with" 
+      str2_html: "%{ror_href}. This is the sample application for the tutorial."
+      str3: "screencast series"
+  book: "book"
+  rort: "Ruby on Rails Tutorial"
+  ror: "Ruby on Rails"
+  base_title: "Ruby on Rails Tutorial Sample App"
+  url:
+    main_page: "https://www.railstutorial.org/"
+    help_page: "https://www.railstutorial.org/help"
+    book_page: "https://www.railstutorial.org/book"
+    about_page: "https://www.railstutorial.org/about"
+    ror_page: "https://rubyonrails.org/"
+    screnn_page: "http://screencasts.railstutorial.org/"

@@ -1,0 +1,8 @@
+<% provide :title, t(".title") %>
+<h1><%= t ".title"%></h1>
+<p>
+  <%= t ".str1_html", main_href: link_to(t("rort"), t("url.main_page"))\
+  	, book_href: link_to(t("book"), t("url.book_page"))\
+  	, screnn_href: link_to(t(".str3"), t("url.screnn_page")) %>
+  <%= t ".str2_html", ror_href: link_to(t("ror"), t("url.ror_page"))%>
+</p>
