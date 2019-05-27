@@ -51,7 +51,7 @@ en:
   book: "book"
   rort: "Ruby on Rails Tutorial"
   ror: "Ruby on Rails"
-  base-main: "Ruby on Rails Tutorial Sample App"
+  base_title: "Ruby on Rails Tutorial Sample App"
   url:
     main_page: "https://www.railstutorial.org/"
     help_page: "https://www.railstutorial.org/help"
