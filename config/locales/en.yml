@@ -30,12 +30,24 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
+  layouts:
+    header:
+      str1: "sample app"
+      str2: "Log in"
+    footer:  
+      str1_html: "The %{main_href}  by %{michael_href}" 
+      str2: "About"
+      str3: "Contact"
+      str4_html: "%{newuser_href}" 
+      str5: "News"
   static_pages:
     home:
       title: "Home"
       title1: "Sample App"
       str1_html: "This is the home page for the %{href}"
       str2: "sample application"
+      str3: "Welcome to the Sample App"
+      str4: "Sign up now!"
     help:
       title: "Help"
       str1_html: "Get help on the Ruby on Rails Tutorial at the %{href}"
@@ -48,10 +60,19 @@ en:
       to teach web development with" 
       str2_html: "%{ror_href}. This is the sample application for the tutorial."
       str3: "screencast series"
+    contact: 
+      title: "Contact"
+      str1_html: "Contact the Ruby on Rails Tutorial about the sample app at the %{href}"
+      str2: "contact page"
+  users:
+    new:
+      title: "Sign up"
+      str1: "This will be a signup page for new users."
   book: "book"
   rort: "Ruby on Rails Tutorial"
   ror: "Ruby on Rails"
   base_title: "Ruby on Rails Tutorial Sample App"
+  mh: "Michael Hartl"
   url:
     main_page: "https://www.railstutorial.org/"
     help_page: "https://www.railstutorial.org/help"
@@ -59,3 +80,7 @@ en:
     about_page: "https://www.railstutorial.org/about"
     ror_page: "https://rubyonrails.org/"
     screnn_page: "http://screencasts.railstutorial.org/"
+    michael_page: "http://www.michaelhartl.com/"
+    newuser_page: "http://news.railstutorial.org/"
+    contact_page: "https://www.railstutorial.org/contact"
+

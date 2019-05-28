@@ -1,0 +1,13 @@
+<footer class="footer">
+  <small>
+     <%= t".str1_html", main_href: link_to(t("rort"), t("url.main_page"))\
+      , michael_href: link_to(t("mh"), t("url.michael_page"))%>
+  </small>
+  <nav>
+    <ul>
+      <li><%= link_to t(".str2"),   about_path %></li>
+      <li><%= link_to t(".str3"), contact_path %></li>
+      <li><%= t".str4_html", newuser_href: link_to(t(".str5"), t("url.newuser_page"))%></li>
+    </ul>
+  </nav>
+</footer>
