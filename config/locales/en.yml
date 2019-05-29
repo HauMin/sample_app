@@ -111,6 +111,9 @@ en:
   account_activation: "Account activated!"
   invalid_activation: "Invalid activation link"
   not_active: "Account not activated. Check your email for the activation link."
+  account_activation123: "Account activation"
+  pass_reset: "Password reset"
+  reser_pass: "Reset password"
   error:
     one: "%{count} error"
     other: "%{count} errors"
@@ -119,6 +122,7 @@ en:
     creat: "Create my account"
     savech: "Save changes"
     ys: "You sure?"
+    submit: "Submit"
 
   url:
     main_page: "https://www.railstutorial.org/"

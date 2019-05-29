@@ -16,6 +16,17 @@ class SessionsController < ApplicationController
     redirect_to root_url
   end
 
+  def check_active_user user
+    if user.activated?
+      log_in user
+      remember_check params[:session][:remember_me], user
+      redirect_back_or user
+    else
+      flash[:warning] = t "not_active"
+      redirect_to root_path
+    end
+  end
+
   private
   def remember_check checked, user
     checked == Settings.checked ? remember(user) : forget(user)
