@@ -10,6 +10,9 @@ gem "rails", "~> 5.2.3"
 # Use sqlite3 as the database for Active Record
 gem "bcrypt", "3.1.12"
 
+gem "carrierwave", "1.2.2"
+gem "mini_magick", "4.7.0"
+
 gem "bootstrap-will_paginate", "1.0.0"
 gem "config"
 gem "faker"
@@ -65,6 +68,7 @@ group :test do
 end
 
 group :production do
+  gem "fog", "1.42"
   gem "pg", "0.20.0"
 end
 

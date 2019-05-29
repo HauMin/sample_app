@@ -12,3 +12,9 @@ domain: "gmail.com"
 authentication: "plain"
 enable_auto: true
 password_expire_time: 2
+content_length: 140
+size_ava_sm: 50
+n_5: 5
+img_rule: "image/jpeg,image/gif,image/png"
+size_limit: 400
+
