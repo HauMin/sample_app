@@ -4,3 +4,10 @@ password_min_length: 6
 avatar_size: 80
 checked: "1"
 per_page: 1
+
+default_from_email: "haumin1201@gmail.com"
+address: "smtp.gmail.com"
+port: 587
+domain: "gmail.com"
+authentication: "plain"
+enable_auto: true

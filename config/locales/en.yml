@@ -83,6 +83,10 @@ en:
   shared:
     error_messages:
       str1_html: "This form contains %{error_href}."
+  user_mailer:
+    account_activation.text:
+      str1: "Welcome to the Sample App! Click on the link below to activate your account:"
+      str2: "Hi"
   book: "book"
   rort: "Ruby on Rails Tutorial"
   ror: "Ruby on Rails"
@@ -97,6 +101,16 @@ en:
   profile_update: "Profile updated"
   p_login: "Please log in."
   user_deleted: "User deleted"
+  plcm: "Please check your email to activate your account."
+  ana: "Account not activated. "
+  cymftal: "Check your email for the activation link."
+  uspr: User#password_reset
+  sample_app: "Sample App"
+  welcom: "Welcome to the Sample App! Click on the link below to activate your account:"
+  activate: "Activate"
+  account_activation: "Account activated!"
+  invalid_activation: "Invalid activation link"
+  not_active: "Account not activated. Check your email for the activation link."
   error:
     one: "%{count} error"
     other: "%{count} errors"
