@@ -4,6 +4,9 @@ class UsersController < ApplicationController
   before_action :correct_user, only: [:edit, :update]
   before_action :admin_user, only: :destroy
 
+  before_action :logged_in_user, except: [:index, :edit, :update, :destroy,
+    :following, :followers]
+
   def index
     @users = User.paginate page: params[:page],
       per_page: Settings.per_page
@@ -15,7 +18,7 @@ class UsersController < ApplicationController
 
   def show
     redirect_to root_url && return unless @user.activated
-    @microposts = @user.microposts.descending.paginate(page: params[:page],
+    @microposts = @user.microposts.paginate(page: params[:page],
       per_page: Settings.index_per_page)
   end
 
@@ -49,6 +52,18 @@ class UsersController < ApplicationController
       flash[:danger] = t "user_not_found"
       redirect_to root_path
     end
+  end
+
+  def following
+    @title = t "following"
+    @users = @user.following.paginate(page: params[:page])
+    render "show_follow"
+  end
+
+  def followers
+    @title = t "follower"
+    @users = @user.followers.paginate(page: params[:page])
+    render "show_follow"
   end
 
   private

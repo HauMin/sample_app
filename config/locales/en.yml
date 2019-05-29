@@ -130,6 +130,11 @@ en:
   reset_pass: "Reset password"
   msg_size_pic: "Maximum file size is 5MB. Please choose a smaller file."
   micropost_detele_failed: "Micropost delete FAILED"
+  following: "following"
+  follow: "Follow"
+  unfollow: "Unfollow"
+  micropost: "Microposts:"
+  follower: "followers"
   error:
     one: "%{count} error"
     other: "%{count} errors"

@@ -4,6 +4,9 @@
       <section class="user_info">
         <%= render "shared/user_info" %>
       </section>
+      <section class="stats">
+        <%= render "shared/stats" %>
+      </section>
       <section class="micropost_form">
         <%= render "shared/micropost_form" %>
       </section>
@@ -19,7 +22,7 @@
 
     <h2>
       <%= t ".str1_html", href: link_to(t("rort"), t("url.main_page")) %>
-  	  <%= t ".str2" %>
+      <%= t ".str2" %>
     </h2>
 
     <%= link_to t(".str4"), signup_path, class: "btn btn-lg btn-primary" %>
