@@ -14,7 +14,8 @@ class UsersController < ApplicationController
   end
 
   def show
-    @microposts = @user.microposts.descending.paginate(page: params[:page],
+    redirect_to root_url && return unless @user.activated
+    @microposts = @user.microposts.paginate(page: params[:page],
       per_page: Settings.index_per_page)
   end
 
