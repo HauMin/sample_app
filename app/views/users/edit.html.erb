@@ -1,10 +1,10 @@
-<% provide(:title, "Sign up") %>
-<h1><%= t ".title"%></h1>
+<% provide(:title, t(".title")) %>
+<h1><%= t".str1" %></h1>
 
 <div class="row">
   <div class="col-md-6 col-md-offset-3">
-    <%= form_for(@user, url: signup_path) do |f| %>
-      <%= render 'shared/error_messages' %>
+    <%= form_for(@user) do |f| %>
+      <%= render "shared/error_messages" %>
 
       <%= f.label :name %>
       <%= f.text_field :name, class: "form-control" %>
@@ -18,8 +18,12 @@
       <%= f.label :password_confirmation, t("form.confirm") %>
       <%= f.password_field :password_confirmation, class: "form-control" %>
 
-      <%= f.submit t("form.creat"), class: "btn btn-primary" %>
+      <%= f.submit t("form.savech"), class: "btn btn-primary" %>
     <% end %>
+
+    <div class="gravatar_edit">
+      <%= gravatar_for @user %>
+      <%= t".str2_html", href: link_to(t(".str3"), t("url.gravatar_page"))%>
+    </div>
   </div>
 </div>
-

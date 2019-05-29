@@ -73,6 +73,13 @@ en:
     new:
       title: "Sign up"
       str1: "This will be a signup page for new users."
+    edit: 
+      title: "Edit user"
+      str1: "Update your profile"
+      str2_html: "%{href}"
+      str3: change
+    index: 
+      title: "All users"
   shared:
     error_messages:
       str1_html: "This form contains %{error_href}."
@@ -82,16 +89,23 @@ en:
   base_title: "Ruby on Rails Tutorial Sample App"
   mh: "Michael Hartl"
   user_not_found: "User does not exist"
-  wcttsa: "Welcome to the Sample App!"
+  welcom_sampleapp: "Welcome to the Sample App!"
   ssdg: "Invalid email/password combination"
   login: "Log in"
   signup: "Sign up now!"
   ssr: "Remember me on this computer"
+  profile_update: "Profile updated"
+  p_login: "Please log in."
+  user_deleted: "User deleted"
   error:
     one: "%{count} error"
     other: "%{count} errors"
   form:
     confirm: "Confirmation"
+    creat: "Create my account"
+    savech: "Save changes"
+    ys: "You sure?"
+
   url:
     main_page: "https://www.railstutorial.org/"
     help_page: "https://www.railstutorial.org/help"
@@ -102,4 +116,4 @@ en:
     michael_page: "http://www.michaelhartl.com/"
     newuser_page: "http://news.railstutorial.org/"
     contact_page: "https://www.railstutorial.org/contact"
-
+    gravatar_page: "http://gravatar.com/emails"
