@@ -34,6 +34,11 @@ en:
     header:
       str1: "sample app"
       str2: "Log in"
+      str3: "Users"
+      str4: "Account"
+      str5: "Profile"
+      str6: "Settings"
+      str7: "Log out"
     footer:  
       str1_html: "The %{main_href}  by %{michael_href}" 
       str2: "About"
@@ -78,6 +83,9 @@ en:
   mh: "Michael Hartl"
   user_not_found: "User does not exist"
   wcttsa: "Welcome to the Sample App!"
+  ssdg: "Invalid email/password combination"
+  login: "Log in"
+  signup: "Sign up now!"
   error:
     one: "%{count} error"
     other: "%{count} errors"
