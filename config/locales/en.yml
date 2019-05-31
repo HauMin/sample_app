@@ -86,6 +86,7 @@ en:
   ssdg: "Invalid email/password combination"
   login: "Log in"
   signup: "Sign up now!"
+  ssr: "Remember me on this computer"
   error:
     one: "%{count} error"
     other: "%{count} errors"
