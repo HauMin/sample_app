@@ -53,6 +53,7 @@ en:
       str2: "sample application"
       str3: "Welcome to the Sample App"
       str4: "Sign up now!"
+      str5: "Micropost Feed"
     help:
       title: "Help"
       str1_html: "Get help on the Ruby on Rails Tutorial at the %{href}"
@@ -80,13 +81,21 @@ en:
       str3: change
     index: 
       title: "All users"
+    show:
+      str1: "Microposts"
   shared:
     error_messages:
       str1_html: "This form contains %{error_href}."
+      str2: "The form contains"
   user_mailer:
     account_activation.text:
       str1: "Welcome to the Sample App! Click on the link below to activate your account:"
       str2: "Hi"
+  microposts: 
+    micropost:
+      str1: "Posted"
+      str2: "ago"
+      you_sure: "You sure?"
   book: "book"
   rort: "Ruby on Rails Tutorial"
   ror: "Ruby on Rails"
@@ -113,7 +122,14 @@ en:
   not_active: "Account not activated. Check your email for the activation link."
   account_activation123: "Account activation"
   pass_reset: "Password reset"
-  reser_pass: "Reset password"
+  micro_create: "Micropost created!"
+  micro_deteled: "Micropost deleted"
+  size_pic: "should be less than 5MB"
+  compose: "Compose new micropost..."
+  view_my_profile: "view my profile"
+  reset_pass: "Reset password"
+  msg_size_pic: "Maximum file size is 5MB. Please choose a smaller file."
+  micropost_detele_failed: "Micropost delete FAILED"
   error:
     one: "%{count} error"
     other: "%{count} errors"
@@ -123,7 +139,7 @@ en:
     savech: "Save changes"
     ys: "You sure?"
     submit: "Submit"
-
+    post: "Post"
   url:
     main_page: "https://www.railstutorial.org/"
     help_page: "https://www.railstutorial.org/help"
